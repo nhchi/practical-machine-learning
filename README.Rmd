@@ -1,16 +1,10 @@
-
 ---
- title: "Course Project"
- author: "Ross Flieger-Allison"
- date: "June 21, 2015"
- output: html_document
+title: "Course Project"
+author: "Chi Nguyen"
+date: "May 1, 2016"
+output: html_document
 ---
 
-# Question
-
-In the provided study (_Velloso, E.; Bulling, A.; Gellersen, H.; Ugulino, W.; Fuks, H. Qualitative Activity Recognition of Weight Lifting Exercises. Proceedings of 4th International Conference in Cooperation with SIGCHI (Augmented Human '13) . Stuttgart, Germany: ACM SIGCHI, 2013._), six people participated in a dumbell lifting exercise five different ways. The five ways, as described in the study, were “exactly according to the specification (Class A), throwing the elbows to the front (Class B), lifting the dumbbell only halfway (Class C), lowering the dumbbell only halfway (Class D) and throwing the hips to the front (Class E). Class A corresponds to the specified execution of the exercise, while the other 4 classes correspond to common mistakes.”
-
-By processing data gathered from accelerometers on the belt, forearm, arm, and dumbell of the participants in a machine learning algorithm, our question is: __Can the appropriate activity quality (class A-E) be predicted?__
 
 # Input Data
 
@@ -25,7 +19,7 @@ library(randomForest)
 library(e1071)
 ```
 
-The next step is to import the data and to verify that the training data and the test data are identical.
+The next step is to import the data and to verify that the training data and the test data are identical. 
 
 ```{r, cache=TRUE}
 # Downloads data.
