@@ -1,10 +1,10 @@
 
-+---
- +title: "Course Project"
- +author: "Ross Flieger-Allison"
- +date: "June 21, 2015"
- +output: html_document
-+---
+---
+ title: "Course Project"
+ author: "Ross Flieger-Allison"
+ date: "June 21, 2015"
+ output: html_document
+---
 
 # Question
 
