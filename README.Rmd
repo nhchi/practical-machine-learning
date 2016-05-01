@@ -2,26 +2,27 @@
 title: "Course Project"
 author: "Chi Nguyen"
 date: "May 1, 2016"
-output: html_document
+output: Course_Project.html
 ---
 
+# Question
 
-# Input Data
+In the provided study (_Velloso, E.; Bulling, A.; Gellersen, H.; Ugulino, W.; Fuks, H. Qualitative Activity Recognition of Weight Lifting Exercises. Proceedings of 4th International Conference in Cooperation with SIGCHI (Augmented Human '13) . Stuttgart, Germany: ACM SIGCHI, 2013._), six people participated in a dumbell lifting exercise five different ways. The five ways, as described in the study, were “exactly according to the specification (Class A), throwing the elbows to the front (Class B), lifting the dumbbell only halfway (Class C), lowering the dumbbell only halfway (Class D) and throwing the hips to the front (Class E). Class A corresponds to the specified execution of the exercise, while the other 4 classes correspond to common mistakes.”
 
-First, we need to import all the R packages we're going to use throughout this study.
+By processing data gathered from accelerometers on the belt, forearm, arm, and dumbell of the participants in a machine learning algorithm, our question is: __Can the appropriate activity quality (class A-E) be predicted?__
 
-```{r, results = FALSE, cache = TRUE}
+# Getting Data
+Import the data and verify that the training data and the test data are identical. 
+
+```{r, cache=TRUE}
+# Import R packages for this study.
 library(AppliedPredictiveModeling)
 library(caret)
 library(rattle)
 library(rpart.plot)
 library(randomForest)
 library(e1071)
-```
 
-The next step is to import the data and to verify that the training data and the test data are identical. 
-
-```{r, cache=TRUE}
 # Downloads data.
 download.file(url = "https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv", 
               destfile = "pml-training.csv", method = "curl")
